@@ -2,8 +2,6 @@
 @import "_global";
 @import "_fonts";
 
-
-
 html {
   box-sizing: border-box;
 }
@@ -68,54 +66,53 @@ body {
 .header__navigation li + li {
   margin-left: 26px;
 }
-.header__menu-btn{
+.header__menu-btn {
   width: 30px;
   display: none;
   cursor: pointer;
 }
-.header__menu-row{
+.header__menu-row {
   width: 100%;
   background-color: #e8603c;
   height: 4px;
   margin-bottom: 4px;
 }
-.header__bredcr{
+.header__bredcr {
   margin-top: 22px;
   background-color: #e8603c;
   display: block;
-  h3{
+  h3 {
     color: #ffffff;
     font-size: 24px;
     line-height: 32px;
     padding: 14px 19px;
     position: relative;
-    &::before{
+    &::before {
       right: 100%;
       margin-right: 30px;
     }
-    &::after{
+    &::after {
       left: 100%;
       margin-left: 30px;
     }
     &::before,
-    &::after{
-      content: '';
+    &::after {
+      content: "";
       position: absolute;
-      background: rgba(232,96,60,0.5);
+      background: rgba(232, 96, 60, 0.5);
       height: 60px;
       width: 100%;
       top: 0;
-      
-  }
     }
   }
+}
 
 // end header
 // start slider
 .slider__item {
   position: relative;
 }
-.slider__item img{
+.slider__item img {
   max-width: 100%;
 }
 .slider__item-desc h3 {
@@ -141,7 +138,7 @@ body {
 .sl__slide {
   padding-right: 20px;
 }
-.sl__slide img{
+.sl__slide img {
   max-width: 100%;
 }
 .slider__min {
@@ -297,8 +294,8 @@ body {
 }
 .footer__text {
   font-family: "Helvetica Neue";
-font-size: 12px;
-line-height: 1.2;
+  font-size: 12px;
+  line-height: 1.2;
 }
 
 .footer__text-link {
@@ -339,12 +336,156 @@ line-height: 1.2;
 .footer__item-mail {
   margin-top: 15px;
 }
-.footer__text-link--follow{
+.footer__text-link--follow {
   display: block;
 }
-.footer__text-link--hous{
+.footer__text-link--hous {
   margin-top: 8px;
 }
 
 // end footer
+// start about
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.about__aside {
+  max-width: 220px;
+  width: 100%;
+}
+.aside__item {
+  padding-bottom: 40px;
+  font-family: "Helvetica Neue";
+  P {
+    color: #464646;
+
+    font-size: 12px;
+    padding-top: 20px;
+    line-height: normal;
+  }
+  ul {
+    li {
+      display: block;
+      a {
+        font-size: 12px;
+        font-family: "Helvetica Neue";
+        font-weight: 500;
+      }
+    }
+  }
+}
+.aside__title {
+  color: #e8603c;
+  font-size: 14px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/Thing.png);
+    width: 126px;
+    height: 100%;
+    margin-left: 20px;
+  }
+}
+.about__content {
+  max-width: 648px;
+  width: 100%;
+}
+.about__desc {
+  p {
+    font-family: "Helvetica Neue";
+    font-size: 12px;
+    color: #414141;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .about__mike {
+    display: flex;
+    margin: 30px 0;
+    p {
+      padding-left: 20px;
+    }
+  }
+  .about__d {
+    padding-top: 26px;
+
+    span {
+      float: left;
+      font-family: "Helvetica Neue";
+      font-size: 36px;
+      color: #e8603c;
+      padding-right: 25px;
+    }
+  }
+  .about__line {
+    font-family: "Helvetica Neue - Light Italic";
+    font-size: 12px;
+    line-height: 18px;
+    color: #414141;
+    padding-left: 80px;
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #e8663c;
+      width: 8px;
+      height: 79px;
+      left: 53px;
+      margin-right: 18px;
+    }
+  }
+  .about__colomn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .long {
+      max-width: 310px;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+    .short {
+      max-width: 210px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+}
+.about__alert {
+  .alert__message {
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 26px 0;
+    &.green {
+      color: #98c601;
+      border: 1px solid #98c601;
+      background-color: #effeb9;
+    }
+    &.red {
+      border: 1px solid #eb5439;
+      background-color: #fbcbc1;
+      color: #eb5439;
+    }
+    &.yellow {
+      border: 1px solid #fab418;
+      background-color: #ffe9ad;
+      color: #fab418;
+    }
+    &.blue {
+      border: 1px solid #4d8fcb;
+      background-color: #d1e4f3;
+      color: #4d8fcb;
+    }
+  }
+}
+// end about
 @import "_media";
