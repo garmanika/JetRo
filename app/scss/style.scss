@@ -559,4 +559,149 @@ body {
   }
 }
 // end contact
+// start blog
+.blog__items {
+  position: relative;
+  .blog__items-info {
+    position: absolute;
+    background-color: #e8603c;
+    display: inline-block;
+    padding: 22px;
+    left: -110px;
+    width: 75px;
+    height: 75px;
+    &.quote {
+      padding: 19px;
+      padding-bottom: 0;
+      font-size: 72px;
+      color: #ffffff;
+      font-family: Georgia;
+      line-height: normal;
+    }
+    &.chain{
+      padding: 19px;
+    }
+  }
+}
+.blog__item {
+  .slick-prev {
+    left: 175px;
+  }
+  .slick-arrow {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    z-index: 5;
+    outline: none;
+  }
+  .slick-prev {
+    left: 16px;
+  }
+  .slick-next {
+    right: 15px;
+  }
+  .blog__item-desc {
+    display: flex;
+    margin-top: 25px;
+
+    .blog__item-desc-titles {
+      max-width: 96px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+      margin-right: 50px;
+      h4 {
+        color: #e8603c;
+      }
+      span {
+        color: #bababa;
+        span {
+          margin: 0 5px;
+        }
+      }
+    }
+    .blog__item-desc-info {
+      font-weight: 400;
+      line-height: 18px;
+      max-width: 500px;
+      width: 100%;
+      h4 {
+        font-size: 18px;
+        color: #e8603c;
+        margin-bottom: 20px;
+      }
+      p {
+        font-family: "Helvetica Neue";
+        color: #414141;
+      }
+    }
+  }
+  &-title{
+    color: #e8663c;
+    font-size: 18px;
+    line-height: normal;
+  }
+  a{
+    color: #a0a0a0;
+    font-family: "Helvetica Neue";
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .blog__item-chain__desc{
+    font-family: "Helvetica Neue";
+    font-size: 12px;
+    line-height: 18px;
+    color: #414141;
+  }
+}
+.line {
+  margin: 50px 0;
+}
+.quote-info{
+  padding: 25px 30px 25px 75px;
+  background-color: #f5f5f5;
+  font-family: "Helvetica Neue";
+  color: #474747;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 18px;
+  position: relative;
+  &::before{
+    content: '“';
+    font-family: Georgia;
+    position: absolute;
+    color: #e8663c;
+    font-size: 72px;
+    left: 20px;
+    top: 50%;
+
+  }
+}
+.pagination{
+  margin-bottom: 50px;
+  span,li + li{
+    margin-right: 4px;
+  }
+  .pagination__list li a, .pagination__list li span {
+    font-size: 14px;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3b29d;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 18px;
+    &.active{
+      background-color: #e8663c;
+    }
+}
+}
+// end blog
 @import "_media";
