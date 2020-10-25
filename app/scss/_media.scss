@@ -19,12 +19,32 @@
   }
   .portofio__item {
       max-width: none;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
   }
 @media (max-width: 800px){
   .footer__inner {
       flex-wrap: wrap;
+  }
+  .contact__form{
+    display: block;
+  }
+  .contact__form textarea{
+    max-width: 300px;
+  }
+  .blog__item .blog__item-desc{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+  .blog__item .blog__item-desc .blog__item-desc-titles{
+    margin-right: 0;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  .blog__item .blog__item-desc .blog__item-desc-info{
+    max-width: 100%;
   }
 }
 @media (max-width: 540px) {
@@ -81,17 +101,44 @@
 }
 }
 @media (max-width: 480px) {
+  .about__desc .about__mike{
+    display: block;
+  }
+  .about__desc .about__mike p{
+    padding: 0;
+  }
 .works__item {
   margin-left: 50px;
 }
 .title{
   font-size: 15px;
+  margin-bottom: 5px;
+}
+.about__desc .about__colomn{
+  display: block;
+  margin-bottom: 10px;
+}
+.about__desc .about__colomn .long{
+  max-width: 100%;
+}
+.about__desc .about__colomn .short{
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+.blog__item .blog__item-desc .blog__item-desc-info h4{
+  font-size: 14px;
+}
+.blog__item .blog__item-desc .blog__item-desc-titles{
+  margin-right: 10px;
 }
 }
 @media (max-width: 400px){
   .works__item {
       margin-left: 10px;
   }
+  .contact__form textarea {
+    max-width: 260px;
+}
 }
 @media (min-width: 540px) {
 .header__navigation > ul {

@@ -434,6 +434,10 @@ body {
     p {
       padding-left: 20px;
     }
+    img{
+      height: 220px;
+      width: 222px;
+    }
   }
   .about__d {
     padding-top: 26px;
@@ -611,6 +615,9 @@ body {
   }
 }
 .blog__item {
+  img{
+    width: 100%;
+  }
   .slick-prev {
     left: 175px;
   }

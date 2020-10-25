@@ -92,6 +92,14 @@ $(function(){
     cssEase: 'linear',
     prevArrow: '<button class="slick-arrow slick-prev"><img src="images/prev.svg" alt=""></button>',
     nextArrow: '<button class="slick-arrow slick-next"><img src="images/next.svg" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 950,
+        settings: {
+          arrows: false,
+        }
+      },
+          ]
   });
   $('.plugin__inner').slick({
     slidesToShow: 1,
