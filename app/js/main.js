@@ -94,6 +94,10 @@ $(function(){
     nextArrow: '<button class="slick-arrow slick-next"><img src="images/next.svg" alt=""></button>',
   });
     
+
+
+
+  var mixer = mixitup('.portfolio__inner-box');
   });
   
 

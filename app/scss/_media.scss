@@ -1,3 +1,12 @@
+@media (max-width: 1100px){
+  .portfolio__item{
+    flex-basis: calc(75% - 20px);
+    max-width: 350px;
+    .portfolio__item-info{
+      max-width: 100%;
+    }
+}
+}
 @media (max-width: 860px){
   .title{
       font-size: 16px;
@@ -58,6 +67,17 @@
 }
 .footer .container{
     padding: 0;
+}
+.portfolio__item{
+  flex-basis: 100%;
+  max-width: 100%;
+}
+.portfolio__inner-btn button{
+  width: 100%;
+  text-align: center;
+}
+.portfolio__inner-btn button+button{
+  margin-left: 0;
 }
 }
 @media (max-width: 480px) {
