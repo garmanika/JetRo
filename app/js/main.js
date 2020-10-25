@@ -85,13 +85,23 @@ $(function(){
     slidesToShow: 1,
     infinite: true,
     arrows: true,
-    // autoplay: true,
-    // autoplaySpeed: 2000,
+    autoplay: true,
+    autoplaySpeed: 2000,
     speed: 500,
     fade: true,
     cssEase: 'linear',
     prevArrow: '<button class="slick-arrow slick-prev"><img src="images/prev.svg" alt=""></button>',
     nextArrow: '<button class="slick-arrow slick-next"><img src="images/next.svg" alt=""></button>',
+  });
+  $('.plugin__inner').slick({
+    slidesToShow: 1,
+    infinite: true,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear',
   });
     
 

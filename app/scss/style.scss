@@ -271,6 +271,13 @@ body {
 }
 .works__item {
   max-width: 220px;
+  &-img{
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    min-height: 185px;
+  }
 }
 .works__item-box {
   background-color: #ffffff;
@@ -805,4 +812,21 @@ body {
   }
 }
 // end portfolio
+// start plugin
+.plugin{
+  padding-bottom: 45px;
+  P{
+    margin: 25px 0 45px;
+    color: #414141;
+    font-family: "Helvetica Neue";
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.plugin__inner{
+  img{
+    max-width: 100%;
+  }
+}
+// end plugin
 @import "_media";
