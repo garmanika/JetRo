@@ -109,6 +109,26 @@ body {
 
 // end header
 // start slider
+.slider{
+  .slick-arrow {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    z-index: 5;
+    outline: none;
+}
+.slick-prev {
+  left: 16px;
+}
+.slick-next {
+  right: 15px;
+}
+}
 .slider__item {
   position: relative;
 }

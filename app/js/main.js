@@ -4,8 +4,8 @@ $(function(){
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: '<button class="slick-arrow slick-prev"><img src="image/prev.svg" alt=""></button>',
-    nextArrow: '<button class="slick-arrow slick-next"><img src="image/next.svg" alt=""></button>',
+    prevArrow: '<button class="slick-arrow slick-prev"><img src="images/prev.svg" alt=""></button>',
+    nextArrow: '<button class="slick-arrow slick-next"><img src="images/next.svg" alt=""></button>',
     asNavFor: '.slider__min',
     responsive: [
       {
@@ -81,7 +81,7 @@ $(function(){
       }
           ]
   });
-  $('.slider').slick({
+  $('.blog-slider').slick({
     slidesToShow: 1,
     infinite: true,
     arrows: true,
